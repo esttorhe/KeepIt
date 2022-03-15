@@ -101,4 +101,16 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://github.com/imsun/gitment">comments powered by gitment.</a></noscript>
   {{- end -}}
+
+ <!-- utterance -->
+  {{- if .Site.Params.utterance.owner -}}
+  <script src="https://utteranc.es/client.js"
+        repo='{{ .Site.Params.utterance.owner }}/{{ .Site.Params.utterance.repo }}'
+        issue-term='{{ .Site.Params.utterance.issueTerm }}'
+        label='{{ .Site.Params.utterance.label }}'
+        theme='{{ .Site.Params.utterance.theme }}'
+        crossorigin="anonymous"
+        async>
+  </script>
+  {{- end }}
 {{- end }}
