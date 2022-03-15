@@ -116,7 +116,18 @@
        }
     }
     &:after {
-      content: "#blockquote" attr(cite);
+      content: attr(cite);
+      display: block;
+      text-align: right;
+      font-size: 0.875em;
+      color: $light-post-link-color;
+
+       .dark-theme &{
+         color: $dark-post-link-color;
+       }
+    }
+    &:after[link] {
+      content: attr(cite) attr(cite);
       display: block;
       text-align: right;
       font-size: 0.875em;

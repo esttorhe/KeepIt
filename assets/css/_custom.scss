@@ -2,3 +2,64 @@
 // Custom style
 // ==============================
 // You can override the variables in _variables.scss to customize the style
+
+.terminal {
+	background: #343a40;
+	border: 1px solid #adb5bd;
+	border-radius: .3rem;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+	pre {
+		color: white;
+		margin: 0;
+		background-color: #343a40 !important;
+	}
+	code {
+		color: white;
+		margin: 0;
+		background-color: #343a40 !important;
+		border: 0px solid #000 !important;
+		box-shadow: 0px 0px 0 #000, 0px 0px 0 #000 !important;
+
+		pre {
+			white-space: normal !important;
+		}
+	}
+	header {
+		background: #adb5bd;
+		border-top-right-radius: .25rem;
+		border-top-left-radius: .25rem;
+		box-shadow: inset 0 1px 1px #f8f9fa;
+		padding: 0 .5rem;
+	}
+	main {
+		border-bottom-right-radius: .25rem;
+		border-bottom-left-radius: .25rem;
+		box-shadow: inset 0 0 1px #f8f9fa;
+		padding: .25rem .5rem;
+	}
+	.prompt {
+		color: #28a745;
+		font-weight: bold;
+		margin-right: .25rem;
+	}
+	.controls {
+		display: inline-flex;
+		.control {
+			border-radius: 999px;
+			display: block;
+			height: 10px;
+			margin-right: .5rem;
+			width: 10px;
+		}
+		.control--red {
+			background: #dc3545;
+		}
+		.control--yellow {
+			background: #ffc107;
+		}
+		.control--green {
+			background: #28a745;
+		}
+	}
+}
